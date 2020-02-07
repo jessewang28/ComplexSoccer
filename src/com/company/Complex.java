@@ -32,8 +32,15 @@ public class Complex {
         return rtn;
     }
 
+    public Complex add(double other){
+        double first = this.x + other;
+        double second = this.y + other;
+        Complex rtn = new Complex(first, second);
+        return rtn;
+    }
+
     public Complex multiply(Complex other){
-        double first = this.x*other.x + -1.0*(this.y*other.y);
+        double first = this.x*other.x - this.y*other.y;
         double second = this.x*other.y + this.y*other.x;
         Complex rtn = new Complex(first, second);
         return rtn;
