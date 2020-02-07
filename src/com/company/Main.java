@@ -13,13 +13,14 @@ public class Main {
         double absTest2 = eNeg.abs(); //abs = 5.0
         Complex f = a.add(c);   //f = 3.0 + 5.0i
         Complex g = b.add(d);   //f = 4.0 + 6.0i
-
         Complex h = d.add(eNeg);
+        Complex i = c.multiply(c);
         System.out.println(absTest1);
         System.out.println(absTest2);
         System.out.println(f);
         System.out.println(g);
         System.out.println(h);
+
     }
 }
 
