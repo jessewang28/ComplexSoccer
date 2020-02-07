@@ -16,20 +16,15 @@ public class SoccerTeam {
     public void played(SoccerTeam other, int myScore, int otherScore) {
         if (myScore > otherScore) {
             this.wins++;
-            other.losses++;
-            gamesPlayed++;
-            goals = goals + myScore + otherScore;
-        } else if (otherScore > myScore) {
+            other.losses++; }
+        else if (otherScore > myScore) {
             other.wins++;
-            this.losses++;
-            gamesPlayed++;
-            goals = goals + myScore + otherScore;
-        } else {
+            this.losses++; }
+        else {
             this.ties++;
-            other.ties++;
-            gamesPlayed++;
-            goals = goals + myScore + otherScore;
-        }
+            other.ties++; }
+        gamesPlayed++;
+        goals = goals + myScore + otherScore;
     }
 
     public int ptsCount(SoccerTeam x){
