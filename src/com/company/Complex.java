@@ -39,8 +39,10 @@ public class Complex {
         return rtn;
     }
 
-    public double multiply(double other){
-        double rtn = 
+    public Complex multiply(double other){
+        double first = this.x*other;
+        double second = this.y*other;
+        Complex rtn = new Complex(first, second);
         return rtn;
     }
 
