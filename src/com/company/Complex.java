@@ -28,15 +28,23 @@ public class Complex {
     public Complex add(Complex other){
         double first = this.x + other.x;
         double second = this.y + other.y;
-        Complex z = new Complex (first, second);
-        return z;
+        Complex rtn = new Complex (first, second);
+        return rtn;
     }
 
+    public Complex multiply(Complex other){
+        double first = this.x*other.x + -1.0*(this.y*other.y);
+        double second = this.x*other.y + this.y*other.x;
+        Complex rtn = new Complex(first, second);
+        return rtn;
+    }
 
-
-
-
-
+    public double multiply(Complex other){
+        double first = this.x*other.x + -1.0*(this.y*other.y);
+        double second = this.x*other.y + this.y*other.x;
+        Complex rtn = new Complex(first, second);
+        return rtn;
+    }
 
 }
 

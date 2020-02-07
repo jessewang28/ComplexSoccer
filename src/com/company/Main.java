@@ -24,7 +24,8 @@ public class Main {
 }
 
 /*
-5.0     //Complex Tests
+//Complex Results
+5.0
 5.0
 3.0 + 5.0i
 4.0 + 6.0i
