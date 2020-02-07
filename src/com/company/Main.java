@@ -8,7 +8,8 @@ public class Main {
         Complex c = new Complex(2, 3);
         Complex d = new Complex(2.5, 3.5);
         Complex e = new Complex(3, 4);
-        Complex eNeg = new Complex(-3, -4); //
+        Complex eNeg = new Complex(-3, -4);
+        Complex l = new Complex(0, 4);
         double absTest1 = e.abs(); //abs = 5.0
         double absTest2 = eNeg.abs(); //abs = 5.0
         Complex f = a.add(c);   //f = 3.0 + 5.0i
@@ -17,6 +18,7 @@ public class Main {
         Complex i = c.multiply(e);
         Complex j = a.add(8.8);
         Complex k = a.multiply(4);
+        Complex m = l.multiply(e);
         System.out.println(absTest1);
         System.out.println(absTest2);
         System.out.println(f);
@@ -25,7 +27,7 @@ public class Main {
         System.out.println(i);
         System.out.println(j);
         System.out.println(k);
-
+        System.out.println(m);
 
     }
 }
@@ -37,4 +39,8 @@ public class Main {
 3.0 + 5.0i
 4.0 + 6.0i
 -0.5 + -0.5i
+-6.0 + 17.0i
+9.8 + 10.8i
+4.0 + 8.0i
+-16.0 + 12.0i
  */
