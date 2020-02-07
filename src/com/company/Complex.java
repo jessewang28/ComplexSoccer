@@ -9,7 +9,7 @@ public class Complex {
         y=0;
     }
 
-    public String toString(Complex z){
+    public String toString(){
         String c = x + " + " + y + "i";
         return c;
     }
@@ -19,7 +19,7 @@ public class Complex {
         y=b;
     }
 
-    public double abs(Complex c){
+    public double abs(){
         double squared = Math.pow(x, 2) + Math.pow(y,2);
         double sqrt = Math.sqrt(squared);
         return sqrt;
