@@ -34,7 +34,9 @@ public class Main {
         SoccerTeam T3 = new SoccerTeam();
         SoccerTeam T4 = new SoccerTeam();
 
-
+        for (int r=0; r<=1;r++){
+            T1.played(T2, 3, 2);
+        }
 
 
     }
