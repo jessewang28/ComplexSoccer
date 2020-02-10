@@ -13,6 +13,13 @@ public class SoccerTeam {
         ties = t;
     }
 
+    public SoccerTeam(){
+        wins = 0;
+        losses = 0;
+        ties = 0;
+    }
+
+
     public void played(SoccerTeam other, int myScore, int otherScore) {
         if (myScore > otherScore) {
             this.wins++;

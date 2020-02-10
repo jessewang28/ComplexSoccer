@@ -29,8 +29,10 @@ public class Main {
         System.out.println(k);
         System.out.println(m);
 
-        SoccerTeam
-
+        SoccerTeam T1 = new SoccerTeam();
+        SoccerTeam T2 = new SoccerTeam();
+        SoccerTeam T3 = new SoccerTeam();
+        SoccerTeam T4 = new SoccerTeam();
 
 
 
