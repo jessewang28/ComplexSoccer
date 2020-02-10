@@ -35,7 +35,11 @@ public class Main {
         SoccerTeam T4 = new SoccerTeam();
 
         for (int r=0; r<=1;r++){
-            T1.played(T2, 3, 2);
+            T1.played(T2, 3, 1);
+            T2.played(T3, 2, 3);
+            T3.played(T4, 1, 2);
+            T4.played(T1, 6, 1;
+
         }
 
 
