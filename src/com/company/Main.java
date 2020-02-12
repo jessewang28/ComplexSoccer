@@ -1,3 +1,6 @@
+//Jesse Wang
+//3B Computer Science
+
 package com.company;
 
 public class Main {
@@ -35,7 +38,7 @@ public class Main {
         SoccerTeam T4 = new SoccerTeam();
 
 
-        T1.startTournament();       //1st Tournament
+        SoccerTeam.startTournament();       //1st Tournament
         T1.played(T2, 3, 1);
         T2.played(T3, 2, 3);
         T3.played(T4, 1, 2);
@@ -45,14 +48,14 @@ public class Main {
         System.out.println("Team 2: " + T2.ptsCount());
         System.out.println("Team 3: " + T3.ptsCount());
         System.out.println("Team 4: " + T4.ptsCount());
-        System.out.println("Total Games Played: " + T1.getGamesPlayed());       //why T1.getGamesPlayed() despite static method?
-        System.out.println("Total Goals Scored: " + T1.getGoals());
+        System.out.println("Total Games Played: " + SoccerTeam.getGamesPlayed());       //why T1.getGamesPlayed() despite static method?
+        System.out.println("Total Goals Scored: " + SoccerTeam.getGoals());
         T1.reset();
         T2.reset();
         T3.reset();
         T4.reset();
 
-        T1.startTournament();       //2nd Tournament
+        SoccerTeam.startTournament();       //2nd Tournament
         T1.played(T2, 1, 2);
         T2.played(T3, 3, 3);
         T3.played(T4, 1, 1);
@@ -62,8 +65,8 @@ public class Main {
         System.out.println("Team 2: " + T2.ptsCount());
         System.out.println("Team 3: " + T3.ptsCount());
         System.out.println("Team 4: " + T4.ptsCount());
-        System.out.println("Total Games Played: " + T1.getGamesPlayed());
-        System.out.println("Total Goals Scored: " + T1.getGoals());
+        System.out.println("Total Games Played: " + SoccerTeam.getGamesPlayed());
+        System.out.println("Total Goals Scored: " +  SoccerTeam.getGoals());
         T1.reset();
         T2.reset();
         T3.reset();
