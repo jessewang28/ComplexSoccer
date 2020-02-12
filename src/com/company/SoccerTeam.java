@@ -4,8 +4,8 @@ public class SoccerTeam {
     private int wins;
     private int losses;
     private int ties;
-    private static int gamesPlayed=0;
-    private static int goals=0;
+    private static int gamesPlayed;
+    private static int goals;
 
     public SoccerTeam(int w, int l, int t){
         wins = w;
@@ -39,7 +39,7 @@ public class SoccerTeam {
     }
 
     public static int getGoals(){
-        return getGoals();
+        return goals;
     }
 
     public static void startTournament(){
@@ -47,7 +47,7 @@ public class SoccerTeam {
         goals=0;
     }
 
-    public int ptsCount(SoccerTeam x){
+    public int ptsCount(){
             int pts = wins*3 + ties;
             return pts;
         }

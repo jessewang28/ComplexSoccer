@@ -29,18 +29,45 @@ public class Main {
         System.out.println(k);
         System.out.println(m);
 
-        SoccerTeam T1 = new SoccerTeam();
+        SoccerTeam T1 = new SoccerTeam();       //SoccerTeam
         SoccerTeam T2 = new SoccerTeam();
         SoccerTeam T3 = new SoccerTeam();
         SoccerTeam T4 = new SoccerTeam();
 
-        for (int r=0; r<=1;r++){
-            T1.played(T2, 3, 1);
-            T2.played(T3, 2, 3);
-            T3.played(T4, 1, 2);
-            T4.played(T1, 6, 1;
 
-        }
+        T1.startTournament();       //1st Tournament
+        T1.played(T2, 3, 1);
+        T2.played(T3, 2, 3);
+        T3.played(T4, 1, 2);
+        T4.played(T1, 6, 1);
+
+        System.out.println("Team 1: " + T1.ptsCount());
+        System.out.println("Team 2: " + T2.ptsCount());
+        System.out.println("Team 3: " + T3.ptsCount());
+        System.out.println("Team 4: " + T4.ptsCount());
+        System.out.println("Total Games Played: " + T1.getGamesPlayed());       //why T1.getGamesPlayed() despite static method?
+        System.out.println("Total Goals Scored: " + T1.getGoals());
+        T1.reset();
+        T2.reset();
+        T3.reset();
+        T4.reset();
+
+        T1.startTournament();       //2nd Tournament
+        T1.played(T2, 1, 2);
+        T2.played(T3, 3, 3);
+        T3.played(T4, 1, 1);
+        T4.played(T1, 6, 7);
+
+        System.out.println("Team 1: " + T1.ptsCount());
+        System.out.println("Team 2: " + T2.ptsCount());
+        System.out.println("Team 3: " + T3.ptsCount());
+        System.out.println("Team 4: " + T4.ptsCount());
+        System.out.println("Total Games Played: " + T1.getGamesPlayed());
+        System.out.println("Total Goals Scored: " + T1.getGoals());
+        T1.reset();
+        T2.reset();
+        T3.reset();
+        T4.reset();
 
 
     }
@@ -57,4 +84,19 @@ public class Main {
 9.8 + 10.8i
 4.0 + 8.0i
 -16.0 + 12.0i
+
+//SoccerTeam Results
+Team 1: 3
+Team 2: 0
+Team 3: 3
+Team 4: 6
+Total Games Played: 4
+Total Goals Scored: 19
+Team 1: 3
+Team 2: 4
+Team 3: 2
+Team 4: 1
+Total Games Played: 4
+Total Goals Scored: 24
+
  */

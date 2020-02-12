@@ -34,7 +34,7 @@ public class Complex {
 
     public Complex add(double other){
         double first = this.x + other;
-        double second = this.y + other;
+        double second = this.y + other;     //Do you still add the other to the second term because isn't technically "i" so you can't just add like 3+ 3i to get 6i?
         Complex rtn = new Complex(first, second);
         return rtn;
     }
